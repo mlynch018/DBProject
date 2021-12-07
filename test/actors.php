@@ -2,7 +2,7 @@
 
 include('config/db_connect.php');
 
-$sql = 'SELECT professionals.Fname, professionals.Mname, professionals.Lname FROM professionals, actors WHERE actors.ProfID = professionals.IDno GROUP BY actors.ProfID;';
+$sql = 'SELECT professionals.Fname, professionals.Mname, professionals.Lname, professionals.IDno FROM professionals, actors WHERE actors.ProfID = professionals.IDno GROUP BY actors.ProfID;';
 // get the result set (set of rows)
 $result = mysqli_query($conn, $sql);
 // fetch the resulting rows as an array
@@ -32,7 +32,7 @@ $conn->close();
 							<h5><?php echo htmlspecialchars($a['Fname']); echo " "; echo htmlspecialchars($a['Mname']); echo " ";  echo htmlspecialchars($a['Lname']) ?></h5>
 						</div>
 						<div class="card-action right-align">
-							<a class="brand-text" href="#">more info</a>
+							<a class="brand-text" href="details.php?id=<?php echo $a['IDno']?>">more info</a>
 						</div>
 					</div>
 				</div>
