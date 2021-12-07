@@ -19,7 +19,7 @@ $conn->close();
 	
 	<?php include('templates/header.php'); ?>
 
-	<h4 class="center grey-text">Managers!</h4>
+	<h4 class="center grey-text">Models!</h4>
 
 	<div class="container">
 		<div class="row">
