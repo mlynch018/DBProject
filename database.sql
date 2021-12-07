@@ -140,3 +140,10 @@ INSERT INTO REELS VALUES('4002', 'amazingvoice.com/curtis/animals');
 INSERT INTO VOICEACTORS VALUES('4','4000');
 INSERT INTO VOICEACTORS VALUES('4','4001');
 INSERT INTO VOICEACTORS VALUES('4','4002');
+
+INSERT INTO CHARACTERISTICS VALUES('1','2','Blue','talentedkids.com/candace', 'Blonde', '90', '45');
+INSERT INTO CHARACTERISTICS VALUES('2','4','Green','barker.com/headshot', 'Black', '110','56');
+INSERT INTO CHARACTERISTICS VALUES('3','9','Brown','realtalent.com/franke_headshot','Black','160','72');
+INSERT INTO CHARACTERISTICS VALUES('4','11','Brown','amazingvoice.com/curtis/headshots','Blonde','180','68');
+INSERT INTO CHARACTERISTICS VALUES('5','6','Hazel','junemaxwell.org/pic','Ginger','120','64');
+INSERT INTO CHARACTERISTICS VALUES('6','9','Blue','modelinginc.com/wendy/profilepic','Brown','140','72');
