@@ -29,10 +29,10 @@
   <nav class="white z-depth-0">
   		<div class="container">
 		<ul id="nav-mobile" class="right hide-on-small-and-down">
-        	<li><a href="#" class="btn brand z-depth-0">Models</a></li>
-        	<li><a href="#" class="btn brand z-depth-0">Actors</a></li>
-        	<li><a href="#" class="btn brand z-depth-0">Voices</a></li>
-     		<li><a href="#" class="btn brand z-depth-0">Kids</a></li>
+        	<li><a href="model.php" class="btn brand z-depth-0">Models</a></li>
+        	<li><a href="actors.php" class="btn brand z-depth-0">Actors</a></li>
+        	<li><a href="voices.php" class="btn brand z-depth-0">Voices</a></li>
+     		<li><a href="kid.php" class="btn brand z-depth-0">Kids</a></li>
         	<li><a href="adultman.php" class="btn brand z-depth-0">Men</a></li>
         	<li><a href="adultwoman.php" class="btn brand z-depth-0">Women</a></li>
         	<li><a href="manager.php" class="btn brand z-depth-0">Managers</a></li>
