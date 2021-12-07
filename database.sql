@@ -122,3 +122,21 @@ INSERT INTO CHILD VALUES('2', '2005-02-04');
 
 INSERT INTO ACTORS VALUES('2','barker.com/videos');
 INSERT INTO ACTORS VALUES ('3', 'realtalent.com/frankie_demos');
+
+INSERT INTO PORTFOLIOS VALUES('1000','talentedkids.com/candace');
+INSERT INTO PORTFOLIOS VALUES('5000','junemaxwell.org/about');
+INSERT INTO PORTFOLIOS VALUES('5001','junemaxwell.org/fashionshow');
+INSERT INTO PORTFOLIOS VALUES('6000','modelinginc.com/wendy/pics');
+
+INSERT INTO MODEL VALUES('1','1000');
+INSERT INTO MODEL VALUES('5','5000');
+INSERT INTO MODEL VALUES('5','5001');
+INSERT INTO MODEL VALUES('6','6000');
+
+INSERT INTO REELS VALUES('4000','amazingvoice.com/curtis/cartoon');
+INSERT INTO REELS VALUES('4001','amazingvoice.com/curtis/superhero');
+INSERT INTO REELS VALUES('4002', 'amazingvoice.com/curtis/animals');
+
+INSERT INTO VOICEACTORS VALUES('4','4000');
+INSERT INTO VOICEACTORS VALUES('4','4001');
+INSERT INTO VOICEACTORS VALUES('4','4002');
