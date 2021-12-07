@@ -2,8 +2,7 @@
 
 include('config/db_connect.php');
 
-// write query for all pizzas
-$sql = 'SELECT PROFESSIONALS.Fname, PROFESSIONALS.Mname, PROFESSIONALS.Lname, ADULTMAN.suitSize, ADULTMAN.waist, ADULTMAN.sleeve, ADULTMAN.neck FROM professionals, adultman WHERE adultman.profID=professionals.IDno ORDER BY adultman.profID';
+$sql = 'SELECT PROFESSIONALS.Fname, PROFESSIONALS.Mname, PROFESSIONALS.Lname, ADULTMAN.suitSize, ADULTMAN.waist, ADULTMAN.sleeve, ADULTMAN.neck, professionals.IDno FROM professionals, adultman WHERE adultman.profID=professionals.IDno ORDER BY adultman.profID';
 // get the result set (set of rows)
 $result = mysqli_query($conn, $sql);
 // fetch the resulting rows as an array
@@ -36,7 +35,7 @@ $conn->close();
 							<div><?php echo "Sleeve/Neck: " ; echo htmlspecialchars($prof['sleeve']); echo"/"; echo htmlspecialchars($prof['neck']);?></div>
 						</div>
 						<div class="card-action right-align">
-							<a class="brand-text" href="#">more info</a>
+							<a class="brand-text" href="details.php?id=<?php echo $prof['IDno']?>">more info</a>
 						</div>
 					</div>
 				</div>
