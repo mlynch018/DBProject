@@ -40,7 +40,7 @@ Shoe_size DOUBLE(3,1),
 Eye_color varchar(80),
 Headshot varchar(100),
 Hair_color varchar(80),
-Weight Double(3,1),
+Weight Integer,
 Height Integer,
 FOREIGN KEY (ProfID) REFERENCES PROFESSIONALS(IDno)
 );
