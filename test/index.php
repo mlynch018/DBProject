@@ -36,7 +36,7 @@ $conn->close();
 							<div><?php echo "Union ID: " ; echo htmlspecialchars($prof['UID']);?></div>
 						</div>
 						<div class="card-action right-align">
-							<a class="brand-text" href="#">more info</a>
+							<a class="brand-text" href="details.php?id=<?php echo $prof['IDno']?>">more info</a>
 						</div>
 					</div>
 				</div>
