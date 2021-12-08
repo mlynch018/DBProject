@@ -2,7 +2,7 @@
 
 include('config/db_connect.php');
 
-$IDno = $Fname = $Mname = $Lname = $UID = $ManID = '';
+$IDno = $Fname = $Mname = $Lname = $UID = $ManID = $Eye_color = $Headshot = $Hair_color = $Shoe_size = $Weight = $Height = '';
 $errors = array('IDno' => '', 'Fname' => '', 'Lname' => '');
 
 	if(isset($_POST['submit'])){
@@ -39,6 +39,13 @@ $errors = array('IDno' => '', 'Fname' => '', 'Lname' => '');
 		$UID = $_POST['UID'];
 		$ManID = $_POST['ManID'];
 
+		$Eye_color=$_POST['Eye_color'];
+		$Headshot=$_POST['Headshot'];
+		$Hair_color=$_POST['Hair_color'];
+		$Shoe_size=$_POST['Shoe_size'];
+		$Weight=$_POST['Weight'];
+		$Height=$_POST['Height'];
+
 		if(array_filter($errors)){
 			//echo 'errors in form';
 		} else {
@@ -50,8 +57,27 @@ $errors = array('IDno' => '', 'Fname' => '', 'Lname' => '');
 			$UID = mysqli_real_escape_string($conn, $_POST['UID']);
 			$ManID = mysqli_real_escape_string($conn, $_POST['ManID']);
 
+			$Eye_color = mysqli_real_escape_string($conn, $_POST['Eye_color']);
+			$Headshot = mysqli_real_escape_string($conn, $_POST['Headshot']);
+			$Hair_color = mysqli_real_escape_string($conn, $_POST['Hair_color']);
+			$Shoe_size = mysqli_real_escape_string($conn, $_POST['Shoe_size']);
+			$Weight = mysqli_real_escape_string($conn, $_POST['Weight']);
+			$Height = mysqli_real_escape_string($conn, $_POST['Height']);
+
 			//sql insert command
 			$sql = "INSERT INTO professionals(IDno,Fname,Mname,Lname,UID,ManID) VALUES('$IDno','$Fname','$Mname','$Lname','$UID','$ManID')";
+
+			// save to db and check
+			if(mysqli_query($conn, $sql)){
+				// success
+				header('Location: index.php');
+			} else {
+				echo 'query error: '. mysqli_error($conn);
+			}
+
+
+			//sql insert command
+			$sql = "INSERT INTO characteristics(ProfID,Shoe_size,Eye_color,Headshot,Hair_color,Weight,Height) VALUES('$IDno','$Shoe_size','$Eye_color','$Headshot','$Hair_color','$Weight','$Height')";
 
 			// save to db and check
 			if(mysqli_query($conn, $sql)){
@@ -72,7 +98,7 @@ $errors = array('IDno' => '', 'Fname' => '', 'Lname' => '');
 	<section class="container grey-text">
 		<h4 class="center">Add a Professional</h4>
 		<form class="white" action="add.php" method="POST">
-			<label>ID number:</label>
+			<label>ID Number:</label>
 			<input type="text" name="IDno" value="<?php echo htmlspecialchars($IDno) ?>">
 			<div class="red-text"><?php echo $errors['IDno']; ?></div>
 			<label>First Name:</label>
@@ -87,6 +113,18 @@ $errors = array('IDno' => '', 'Fname' => '', 'Lname' => '');
 			<input type="text" name="UID" value="<?php echo htmlspecialchars($UID) ?>">
 			<label>Manager ID:</label>
 			<input type="text" name="ManID" value="<?php echo htmlspecialchars($ManID) ?>">
+			<label>Eye Color:</label>
+			<input type="text" name="Eye_color" value="<?php echo htmlspecialchars($Eye_color) ?>">
+			<label>Headshot:</label>
+			<input type="text" name="Headshot" value="<?php echo htmlspecialchars($Headshot) ?>">
+			<label>Hair Color:</label>
+			<input type="text" name="Hair_color" value="<?php echo htmlspecialchars($Hair_color) ?>">
+			<label>Shoe Size:</label>
+			<input type="float" name="Shoe_size" value="<?php echo htmlspecialchars($Shoe_size) ?>">
+			<label>Weight:</label>
+			<input type="integer" name="Weight" value="<?php echo htmlspecialchars($Weight) ?>">
+			<label>Height:</label>
+			<input type="integer" name="Height" value="<?php echo htmlspecialchars($Height) ?>">
 			<div class="center">
 				<input type="submit" name="submit" value="Submit" class="btn brand z-depth-0">
 			</div>
