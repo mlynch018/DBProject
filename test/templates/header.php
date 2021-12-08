@@ -23,7 +23,7 @@
       	<ul id="nav-mobile" class="right hide-on-small-and-down">
         	<li><a href="add.php" class="btn brand z-depth-0">Add a Professional</a></li>
         	<li><a href="update.php" class="btn brand z-depth-0">Update Characteristics</a></li>
-        	<li><a href="#" class="btn brand z-depth-0">Stats</a></li>
+        	<li><a href="stats.php" class="btn brand z-depth-0">Stats</a></li>
     </div>
   </nav>
   <nav class="white z-depth-0">
