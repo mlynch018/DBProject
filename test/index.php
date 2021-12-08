@@ -1,8 +1,7 @@
 <?php
 
 include('config/db_connect.php');
-
-$sql = 'SELECT * FROM PROFESSIONALS ORDER BY IDno';
+$sql = 'SELECT * FROM PROFESSIONALS,UNIONS WHERE Unions.UnionID=Professionals.UID ORDER BY Professionals.IDno';
 // get the result set (set of rows)
 $result = mysqli_query($conn, $sql);
 // fetch the resulting rows as an array
@@ -32,7 +31,7 @@ $conn->close();
 							<h5><?php echo htmlspecialchars($prof['Fname']); echo " "; echo htmlspecialchars($prof['Mname']); echo " ";  echo htmlspecialchars($prof['Lname']) ?></h5>
 							<div><?php echo "ID: " ; echo htmlspecialchars($prof['IDno']);?></div>
 							<div><?php echo "Manager ID: " ; echo htmlspecialchars($prof['ManID']);?></div>
-							<div><?php echo "Union ID: " ; echo htmlspecialchars($prof['UID']);?></div>
+							<div><?php echo "Union: " ; echo htmlspecialchars($prof['Union_name']);?></div>
 						</div>
 						<div class="card-action right-align">
 							<a class="brand-text" href="details.php?id=<?php echo $prof['IDno']?>">more info</a>
