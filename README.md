@@ -1,6 +1,12 @@
 # DBProject
-Intalize Database with .sql file.
+Make sure Apache and MySQL are started. 
 
-Add this folder to the xampp folder on your pc. Make sure Apache and MySQL are started. Test via localhost/test/index.php
+Create a database called talent (can be done with phpadmin when clicking admin on XAMPP next to SQL).
+
+Intalize Database with .sql file. (Click on your talent database, then SQL and copy and paste the code in the .sql file)
+
+Add the test folder to the htdocs folder of the xampp folder on your pc. 
+
+Test via the website localhost/test/index.php
 
 Sublime Text was used to edit php and html.
