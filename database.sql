@@ -147,3 +147,7 @@ INSERT INTO CHARACTERISTICS VALUES('3','9','Brown','realtalent.com/franke_headsh
 INSERT INTO CHARACTERISTICS VALUES('4','11','Brown','amazingvoice.com/curtis/headshots','Blonde','180','68');
 INSERT INTO CHARACTERISTICS VALUES('5','6','Hazel','junemaxwell.org/pic','Ginger','120','64');
 INSERT INTO CHARACTERISTICS VALUES('6','9','Blue','modelinginc.com/wendy/profilepic','Brown','140','72');
+
+INSERT INTO ADMIN VALUES('1','bobby207','talentrocks651');
+INSERT INTO ADMIN VALUES('2','jking','ilikemovies425');
+INSERT INTO ADMIN VALUES('3','maf1234','word1234');
