@@ -2,7 +2,6 @@
 
 include('config/db_connect.php');
 
-// write query for all pizzas
 $sql = 'SELECT * FROM PROFESSIONALS ORDER BY IDno';
 // get the result set (set of rows)
 $result = mysqli_query($conn, $sql);
