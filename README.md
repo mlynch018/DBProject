@@ -1,4 +1,6 @@
 # DBProject
+This project is ran using XAMPP. It can be downloaded here: https://www.apachefriends.org/index.html
+
 Make sure Apache and MySQL are started. 
 
 Create a database called talent (can be done with phpadmin when clicking admin on XAMPP next to SQL).
