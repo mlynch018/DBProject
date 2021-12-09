@@ -40,7 +40,9 @@ $conn->close();
 				</div>
 
 			<?php } ?>
-
+		</div>
+		<div class="container center">
+			<a class="btn brand z-depth-0" href="addmang.php">Add a manager</a>
 		</div>
 	</div>
 
