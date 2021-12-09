@@ -5,9 +5,9 @@ Make sure Apache and MySQL are started.
 
 Create a database called talent (can be done with phpadmin when clicking admin on XAMPP next to SQL).
 
-Intalize Database with .sql file. (Click on your talent database, then SQL and copy and paste the code in the .sql file)
+Intalize Database with .sql file. (Click on your talent database, then click SQL.) Copy and paste the code in the .sql file, then click GO. 
 
-Add the test folder to the htdocs folder of the xampp folder on your pc. 
+Add the entire test folder to the htdocs folder of the xampp folder on your pc. 
 
 Test via the website localhost/test/index.php
 
